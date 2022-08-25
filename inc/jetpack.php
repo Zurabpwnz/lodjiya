@@ -33,7 +33,7 @@ function lodjiya_wp_theme_jetpack_setup() {
 		'jetpack-content-options',
 		array(
 			'post-details' => array(
-				'stylesheet' => 'lodjiya-wp-theme-style',
+				'stylesheet' => 'lodjiya-style',
 				'date'       => '.posted-on',
 				'categories' => '.cat-links',
 				'tags'       => '.tags-links',

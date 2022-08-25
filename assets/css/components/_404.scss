@@ -1,0 +1,54 @@
+/*
+404
+ */
+
+.error-404 {
+  padding-bottom: 245px;
+
+  img {
+    display: block;
+    margin: 130px auto 0;
+  }
+
+  .error-404__title {
+    margin-bottom: 8px;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+
+    color: $main;
+  }
+
+  .error-404__desc {
+    margin-bottom: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+
+    text-align: center;
+    color: $main;
+  }
+
+  .error-404__link {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+  //  padding: 14px 31px;
+  //  background: #0C6DFA;
+  //  border-radius: 32px;
+  //
+  //  font-family: 'Prompt';
+  //  font-style: normal;
+  //  font-weight: 600;
+  //  font-size: 16px;
+  //  line-height: 24px;
+  //  text-align: center;
+  //
+  //  color: #FFFFFF;
+  }
+}

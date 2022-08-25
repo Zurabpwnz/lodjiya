@@ -1,0 +1,122 @@
+/*
+blog pages
+ */
+
+#blog,
+#knowledge-base,
+#search-result {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-bottom: 38px;
+}
+
+#search-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #E9F1FA;
+
+  @media (max-width: 992px){
+    flex-direction: column;
+  }
+}
+
+.alm-reveal + .alm-reveal {
+  margin-top: 64px;
+}
+
+article,
+article.post,
+article.type-post {
+  display: flex;
+
+  @media (max-width: 992px){
+    flex-direction: column;
+  }
+
+  & + article,
+  & + article.post,
+  & + article.type-post {
+    margin-top: 64px;
+  }
+
+  .post__image {
+    margin-right: 64px;
+    min-width: 448px;
+
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 992px){
+      min-width: auto;
+      margin-right: 0;
+
+      img {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 500px){
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .post__title {
+    a {
+    margin-bottom: 24px;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+    color: $main;
+
+      &:hover {
+        color: $blue-primary;
+      }
+    }
+  }
+
+  .post__link {
+    display: inline-block;
+    padding: 14px 28px 14px 0;
+    font-family: "Prompt";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    color: $blue-primary;
+    background: url(../img/Arrow---Right.svg) no-repeat center right;
+  }
+
+  .post__content {
+    margin-bottom: 11px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    /* or 229% */
+
+    background: linear-gradient(180deg, #2B2934 65.31%, rgba(43, 41, 52, 0) 116.87%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+}
+
+#more_posts,
+.alm-btn-wrap {
+  display: none !important;
+}

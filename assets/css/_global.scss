@@ -1,0 +1,32 @@
+/*
+global
+ */
+
+//* {
+//  margin: 0;
+//  padding: 0;
+//  outline: none !important;
+//}
+
+html {
+  margin-top: 0!important;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  line-height: 1.42857143;
+  background-color: #fff;
+  font-family: "Liberation sans",Arial,Helvetica,sans-serif;
+  color: #000;
+  font-size: 16px;
+}
+
+.met_content {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}

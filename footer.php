@@ -11,22 +11,37 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lodjiya-wp-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'lodjiya-wp-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'lodjiya-wp-theme' ), 'lodjiya-wp-theme', '<a href="https://shyvarbidze.pro/">Zurab Shyvarbidze</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+
+</main><!-- main#page -->
+
+<footer id="colophon" class="site-footer">
+    <div class="site-info">
+        <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lodjiya' ) ); ?>">
+            <?php
+            /* translators: %s: CMS name, i.e. WordPress. */
+            printf( esc_html__( 'Proudly powered by %s', 'lodjiya' ), 'WordPress' );
+            ?>
+        </a>
+        <span class="sep"> | </span>
+        <?php
+        /* translators: 1: Theme name, 2: Theme author. */
+        printf( esc_html__( 'Theme: %1$s by %2$s.', 'lodjiya' ), 'lodjiya', '<a href="https://shyvarbidze.pro/">Zurab Shyvarbidze</a>' );
+        ?>
+    </div><!-- .site-info -->
+</footer><!-- #colophon -->
+
+<div id="back-top" style="display: none;">
+    <a href="#top">
+	<span>
+	<picture>
+	  <source srcset="/images/arowtop.webp" type="image/webp">
+	  <source srcset="/images/arowtop.png" type="image/png">
+	  <img src="/images/arowtop.png" alt="Наверх страницы">
+	</picture>
+
+	</span>
+    </a>
+</div>
 
 <?php wp_footer(); ?>
 

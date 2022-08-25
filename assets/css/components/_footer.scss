@@ -1,0 +1,263 @@
+/*
+footer
+ */
+
+.footer {
+  overflow: hidden;
+  position: relative;
+  //position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background: #F4F9FF;
+
+  &__columns {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding-top: 52px;
+    padding-bottom: 82px;
+    transition: all ease-in 1s;
+
+    &.show {
+      display: grid;
+      transition: all ease-in 1s;
+    }
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding-bottom: 32px;
+    }
+  }
+
+  &__contact {
+    margin-top: 31px;
+    max-width: 551px;
+    width: 100%;
+  }
+
+  &__address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    @media (max-width: 992px) {
+      padding-bottom: 0;
+      margin-bottom: 8px;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: $main;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 24px;
+
+    a {
+      img {
+        width: 24px;
+      }
+    }
+  }
+
+  &__map {
+    position: relative;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+
+    &-img {
+      width: 100%;
+      pointer-events: none;
+    }
+
+    &-robot {
+      position: absolute;
+      left: -39px;
+      bottom: -33px;
+    }
+  }
+
+  &__connection {
+    margin-top: 60px;
+    display: grid;
+    gap: 16px;
+
+    @media (max-width: 992px) {
+      margin-top: 0;
+      padding-left: 36px;
+    }
+  }
+
+  &__mail {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: $blue-primary;
+  }
+
+  &__phone {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main;
+  }
+
+  &__right {
+    padding-top: 75px;
+
+    @media (max-width: 992px) {
+      padding-top: 0;
+    }
+  }
+
+  &__bottom {
+    background: #E9F1FA;
+
+    @media (max-width: 992px) {
+      background: transparent;
+    }
+
+    &-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+
+      @media (max-width: 992px) {
+        gap: 17px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        a:first-child {
+          display: none;
+        }
+      }
+    }
+
+    .policy {
+      ont-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      text-decoration-line: underline;
+      color: $blue-primary;
+
+      @media (max-width: 992px) {
+        grid-row-start: 2;
+      }
+    }
+
+    p {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: $main;
+    }
+  }
+}
+
+.footer-home {
+  margin-top: 60px;
+  //padding-top: 52px;
+
+  @media (max-width: 992px) {
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  .footer__columns {
+    display: grid;
+  }
+}
+
+.footer-small {
+  background: linear-gradient(180deg, #5CB7FF -6.11%, #2194EF 105.73%);
+
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      padding: 2rem 0px;
+    }
+
+    & > * {
+      width: calc(100% / 3);
+      max-width: calc(100% / 3);
+
+      @media (max-width: 992px) {
+        width: max-content;
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__address {
+    display: inline-block;
+    padding-left: 34px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: url(../img/location-white.svg) no-repeat left center;
+  }
+
+  &__action {
+    display: inline-block;
+    padding: 22px;
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: flex-end;
+
+    a + a {
+      margin-left: 25px;
+    }
+  }
+}
+
+
+#toggleFooter {
+  position: absolute;
+  top: 33px;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  background: url('../img/chest.svg') no-repeat center;
+  cursor: pointer;
+
+  @media (max-width: 992px) {
+    top: 15px;
+  }
+}
